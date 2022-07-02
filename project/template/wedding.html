@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Hurricane&family=League+Gothic&family=Lobster&family=Open+Sans:ital,wght@1,500&family=Ramaraja&family=Teko&family=Ubuntu:ital,wght@0,400;0,700;1,500;1,700&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'poppins', sans-serif;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        /* background-color: rgb(168, 113, 220); */
+        background-image: url('/static/wd_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 1000px;
+   
+    }
+
+    .menu-bar {
+        /* background-color: rgb(128, 101, 49); */
+        text-align: center;
+        border: 0px solid black;
+    }
+
+    .menu-bar ul {
+        display: inline-flex;
+        text-align: center;
+        list-style: none;
+    }
+
+    .menu-bar ul li {
+        margin: 10px;
+        padding: 15px;
+        width: 150px;
+    }
+
+    .menu-bar ul li a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: #fff;
+    }
+/* hojpo */
+
+
+
+
+
+
+
+
+.active,.menu-bar ul li:hover{
+    background: #c57d26;
+    border: 1px;
+      
+}
+
+.service{
+   display: none; 
+}
+
+.menu-bar ul li:hover .service{
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 15px;
+    margin-left:-15px ;
+}
+
+.menu-bar ul li:hover .service ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .service ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .service ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .service ul li a:hover{
+    color: #c57d26;
+}
+
+.venue1{
+    display: none; 
+ }
+.hover-me:hover .venue1{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: black;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background:  #bd8643;
+    margin-top: 20px;
+}
+
+.container ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container ul li{
+    float:left;
+    list-style: none;
+    width:20%;
+    height:300px;
+    background-size: cover;
+    background-position: center;
+    
+    margin :20px 0px 20px 55px; 
+    border:2px solid black;
+    box-sizing: border-box;
+}
+.container ul li:hover{
+    opacity: 0.8;
+}
+
+.container ul li .bottom{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: black;    
+    text-align: center;
+    color:white;
+    font-size: 20px;
+   
+}
+.img{
+    display: flex;
+    width:100%;
+    height: 246px;
+    
+    
+    background-size: cover; 
+    background-position: center;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+    margin: auto; 
+    
+    
+}
+
+
+
+</style>
+
+<body>
+
+    <div class="menu-bar">
+
+        <ul>
+            <li><a href=""> Home</a></li>
+            <li><a href="/about"> About us</a></li>
+            <li><a href=""> Service</a>
+                <div class="service">
+                    
+                    <ul>
+                        <li class="hover-me"><a href="/wedding">Wedding</a><i class ="fa fa-angle-right"></i>
+               
+
+            </li>
+
+
+            <li class="hover-me"><a href="#">Birthday</a><i class ="fa fa-angle-right"></i>
+               
+               </li>
+
+
+            <li><a href="#">Other Parties</a></li>
+        </ul>
+        
+    </div>
+
+
+
+    </li>
+   
+    <li><a href="">Gallery</a></li>
+    <li><a href="/contact">Contact</a></li>
+    </ul>
+    </div>
+
+    <div class="container">
+        <ul>
+            
+            <li> <div class="bottom">JAIPUR</div>
+                <div class="img">
+                    <img src="/static/jaipur.jpg" alt="">
+                </div>
+
+                
+               
+
+            
+            </li>
+            <li> <div class="bottom">DELHI</div>
+                <div class="img">
+                    <img src="/static/delhi.jpg" alt="">
+                </div>
+
+
+            
+            </li>
+            <li> <div class="bottom">PATNA</div>
+                <div class="img">
+                    <img src="/static/patnagaya.jpg" alt="">
+                </div>
+
+             </li>
+            <li> <div class="bottom">AGRA</div>
+                <div class="img">
+                    <img src="/static/agra.jpg" alt="">
+                </div>
+
+            
+            </li>
+            <li> <div class="bottom">GOA</div> 
+                <div class="img">
+                    <img src="/static/goa.jpg" alt="">
+                </div>
+
+            
+            </li>
+            <li> <div class="bottom">GURUGRAM</div>
+                <div class="img">
+                    <img src="/static/gurugram.jpg" alt="">
+                </div>
+
+            
+            </li>
+            <li> <div class="bottom">MUSSOORIE</div>
+                <div class="img">
+                    <img src="/static/mussoorie.jpg" alt="">
+                </div>
+
+            
+            </li>
+            <li> <div class="bottom">PUNE</div> 
+                <div class="img">
+                    <img src="https://media.istockphoto.com/photos/aga-khan-palace-in-pune-india-picture-id93466728?s=612x612" alt="">
+                </div>
+
+            
+            </li>
+            <li> <div class="bottom">UDAIPUR</div>
+                <div class="img">
+                    <img src="https://media.istockphoto.com/photos/jal-mahal-jaipur-rajasthan-india-picture-id453234117?b=1&k=20&m=453234117&s=170667a&w=0&h=r0d8Eaco14PlMnZiaOxYBn2vw9quJHjqq9P4SHiaxVM=" alt="">
+                </div>
+
+            
+            </li>
+            <li> <div class="bottom">Mumbai</div>
+                <div class="img">
+                    <img src="https://media.istockphoto.com/photos/mumbai-skyline-wadala-sewri-lalbaug-picture-id1325342016?b=1&k=20&m=1325342016&s=170667a&w=0&h=eVzl8oUCTtR4lK-dPtd8q1SvelPGCjkkdpRx7gJoICo=" alt="">
+                </div>
+
+             </li>
+            <li> <div class="bottom">HYDERABAD</div> 
+                <div class="img">
+                    <img src="https://images.unsplash.com/photo-1551161242-b5af797b7233?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHlkZXJhYmFkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+
+            
+            </li>
+            <li> <div class="bottom">JODHPUR</div>
+                <div class="img">
+                    <img src="https://images.unsplash.com/photo-1545321945-7edd9bf1331a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8am9kaHB1cnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+
+             </li>
+            <li> <div class="bottom">Haryana</div> 
+                <div class="img">
+                    <img src="https://media.istockphoto.com/photos/cheerful-farmer-women-carrying-water-pot-picture-id517988174?b=1&k=20&m=517988174&s=170667a&w=0&h=xNhV9SFae-ej7tJYj5_3tP3uuW7bVDL23R6EAqALGaI=" alt="">
+                </div>
+
+            </li>
+            <li> <div class="bottom">RAIPUR</div>
+                <div class="img">
+                    <img src="https://media.istockphoto.com/photos/raipur-pinned-on-a-map-of-asia-picture-id487973568?b=1&k=20&m=487973568&s=170667a&w=0&h=5LFC7ynDcxKDKMneuxPAc-68xbMzrJWiepFnBhX-R24=" alt="">
+                </div>
+
+             </li>
+            <li> <div class="bottom">Bangalore </div> 
+                <div class="img">
+                    <img src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFuZ2Fsb3JlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                </div>
+
+            </li>
+            <li> <div class="bottom">Andaman and Nicobar Islands</div>
+                <div class="img">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2015/11/Andaman-Nicobar.jpg" alt="">
+                </div>
+
+             </li>
+            <li> <div class="bottom">Rishikesh</div>
+                <div class="img">
+                    <img src="https://media.easemytrip.com/media/Blog/India/637731886444348777/637731886444348777svELpY.jpg" alt="">
+                </div>
+            
+            
+            </li>
+            <li> <div class="bottom">Jim Corbett</div>
+                <div class="img">
+                    <img src="https://www.fabhotels.com/blog/wp-content/uploads/2015/11/Jim-Corbett.jpg" alt="">
+                </div>
+            
+            
+            </li>
+            <li> <div class="bottom">Thailand</div>
+                <div class="img">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2019-12-13-at-11-14-59-pm-1576296919.png?crop=1xw:1xh;center,top&resize=980:*" alt="">
+                </div>
+            
+            
+            </li>
+            <li> <div class="bottom">Mexico</div>
+                <div class="img">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/78544810-2509088012490623-6890029790858838016-o-1576257423.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="">
+                </div>
+            
+            
+            </li>
+            <li> <div class="bottom"> Kerala</div>
+                <div class="img">
+                    <img src="https://media.easemytrip.com/media/Blog/India/637731886444348777/637731886444348777no9OES.jpg" alt="">
+                </div>
+            
+            
+            </li>
+            <li> <div class="bottom">Jaisalmer</div>
+                <div class="img">
+                    <img src="https://media.easemytrip.com/media/Blog/India/637731886444348777/637731886444348777BFHugD.jpg" alt="">
+                </div>
+            
+            
+            </li>
+            <li> <div class="bottom">Amritsar</div>
+                <div class="img">
+                    <img src="https://media.easemytrip.com/media/Blog/India/637731886444348777/637731886444348777iIMSZW.jpg" alt="">
+                </div>
+            
+            
+            </li>
+            <li> <div class="bottom">Bikaner</div>
+                <div class="img">
+                    <img src="https://media.easemytrip.com/media/Blog/India/637731886444348777/637731886444348777owiPKl.jpg" alt="">
+                </div>
+            
+            
+            </li>
+
+            
+
+            
+            
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
